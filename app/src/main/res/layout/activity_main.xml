@@ -6,6 +6,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         tools:context=".MainActivity">
 
         <LinearLayout
@@ -45,6 +47,7 @@
 
 
         <LinearLayout
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -72,6 +75,7 @@
             android:singleLine="true" />
 
         <LinearLayout
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -85,10 +89,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
-                android:textSize="23sp"
                 android:layout_marginLeft="5dp"
-                android:text="연락처" />
+                android:text="연락처"
+                android:textColor="#000000"
+                android:textSize="23sp" />
 
         </LinearLayout>
 
@@ -109,6 +113,46 @@
                 android:layout_gravity="right"/>
 
         </FrameLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/rectangle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="근무 가능 시간"
+                android:textColor="#000000"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="풀타임" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="파트타임 (재직중)" />
+
+        </RadioGroup>
 
 
     </LinearLayout>
